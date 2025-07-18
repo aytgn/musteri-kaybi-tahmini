@@ -1,4 +1,5 @@
 import pandas as pd
+import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
@@ -68,3 +69,10 @@ print("(TP: Gerçekten 'Yes' olan ve 'Yes' tahmin edilenler)")
 # Precision, Recall, F1-score gibi daha detaylı metrikler sunar.
 print("\nDetaylı Sınıflandırma Raporu:")
 print(classification_report(y_test, y_pred))
+
+
+# --- Adım 6: Eğitilmiş Modeli Kaydetme ---
+model_dosyasi = 'musteri_kaybi_modeli.joblib'
+joblib.dump(model, model_dosyasi)
+
+print(f"\nEğitilmiş model '{model_dosyasi}' olarak başarıyla kaydedildi.")
