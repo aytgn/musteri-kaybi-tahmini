@@ -4,5 +4,6 @@ __pycache__/
 *.joblib
 data/islenmis_ozellikler.csv
 data/hedef.csv
+data/churn_data.xlsx
 .vscode/
 .idea/
