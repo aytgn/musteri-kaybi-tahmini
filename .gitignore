@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+*.joblib
+data/islenmis_ozellikler.csv
+data/hedef.csv
+.vscode/
+.idea/
