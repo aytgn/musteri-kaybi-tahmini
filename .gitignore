@@ -7,3 +7,4 @@ data/hedef.csv
 data/churn_data.xlsx
 .vscode/
 .idea/
+*.joblib
